@@ -23,7 +23,7 @@ endif
 
 set vb
 
-set guifont=Inconsolata:h14
+"set guifont= Monako\ 11
 set guioptions-=l
 set guioptions-=r
 set guioptions-=T
