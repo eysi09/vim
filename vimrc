@@ -9,7 +9,7 @@ execute pathogen#infect()
 "Not sure what this is
 "set grepformat=%f:%l:%c%m
 
-colorscheme solarized
+colorscheme monokai
 
 if has('gui_running')
   "set background=light
