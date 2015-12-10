@@ -37,6 +37,8 @@ set undoreload=10000 "maximum number lines to save for undo on a buffer reload
 set expandtab "indent with spaces
 set tabstop=2 "two spaces on tab
 set shiftwidth=2 "how many columns text is indented with the reindent operations (<< and >>)
+set number
+set ignorecase
 
 "ruby
 autocmd FileType ruby,eruby set omnifunc=rubycomplete#Complete
