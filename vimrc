@@ -24,6 +24,12 @@ endif
 set vb
 
 "set guifont= Monako\ 11
+if has("gui_macvim")
+  set guifont=Inconsolata:h13
+  macmenu &File.New\ Tab key=<nop>
+  map <D-t> <Plug>PeepOpen
+endif
+
 set guioptions-=l
 set guioptions-=r
 set guioptions-=T
@@ -78,10 +84,8 @@ let g:ag_working_path_mode="r"
 " Ctrlp
 let g:ctrlp_working_path_mode = 'ra'
 
-if has("gui_macvim")
- macmenu &File.New\ Tab key=<nop>
- map <D-t> <Plug>PeepOpen
-end
+" JSX
+let g:jsx_ext_required = 0
 
 "map split navitagtion
 nnoremap <C-J> <C-W><C-J>
