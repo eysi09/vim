@@ -45,6 +45,7 @@ set tabstop=2 "two spaces on tab
 set shiftwidth=2 "how many columns text is indented with the reindent operations (<< and >>)
 set number
 set ignorecase
+hi Search guibg=red guifg=wheat gui=none
 
 "ruby
 autocmd FileType ruby,eruby set omnifunc=rubycomplete#Complete
