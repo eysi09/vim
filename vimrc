@@ -101,5 +101,7 @@ nnoremap <C-Right> :tabnext<CR>
 nnoremap <silent> <A-Left> :execute 'silent! tabmove ' . (tabpagenr()-2)<CR>
 nnoremap <silent> <A-Right> :execute 'silent! tabmove ' . tabpagenr()<CR>
 
+set backspace=2 " make backspace work like most other apps
+
 :inoremap jk <Esc>
 let mapleader = "\<Space>"
