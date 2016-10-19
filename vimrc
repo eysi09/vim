@@ -112,3 +112,6 @@ inoremap <F12> <C-o>:syntax sync fromstart<CR>
 
 :inoremap jk <Esc>
 let mapleader = "\<Space>"
+
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip,node_modules
+
