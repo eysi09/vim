@@ -103,5 +103,12 @@ nnoremap <silent> <A-Right> :execute 'silent! tabmove ' . tabpagenr()<CR>
 
 set backspace=2 " make backspace work like most other apps
 
+"Syntax highlighting fixes for js files with e.g. long GraphQL query strings
+autocmd FileType javascript autocmd BufEnter * :syntax sync minlines=200 "Add min line sync to improve syntax highlighting
+
+"Use F12 to sync from start and clean up highligting problems
+noremap <F12> <Esc>:syntax sync fromstart<CR>
+inoremap <F12> <C-o>:syntax sync fromstart<CR>
+
 :inoremap jk <Esc>
 let mapleader = "\<Space>"
