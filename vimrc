@@ -115,3 +115,11 @@ let mapleader = "\<Space>"
 
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip,node_modules
 
+" Remove trailing whitespace from file
+fun! TrimWhitespace()
+    let l:save = winsaveview()
+    %s/\s\+$//e
+    call winrestview(l:save)
+endfun
+
+command! TrimWhitespace call TrimWhitespace()
