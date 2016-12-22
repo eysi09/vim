@@ -1,15 +1,35 @@
-syntax enable
+" Vundle related stuff starts here
+set nocompatible
 
-call pathogen#helptags()
+" Required Vundle setup
+filetype off
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+Bundle 'gmarik/vundle'
+Bundle 'rking/ag.vim'
+Bundle 'kien/ctrlp.vim'
+Bundle 'scrooloose/nerdtree'
+Bundle 'kien/rainbow_parentheses.vim'
+Bundle 'altercation/vim-colors-solarized'
+Bundle 'tpope/vim-dispatch'
+Bundle 'pangloss/vim-javascript'
+Bundle 'mxw/vim-jsx'
+Bundle 'sickill/vim-monokai'
+Bundle 'jvirtanen/vim-octave'
+Bundle 'tpope/vim-repeat'
+Bundle 'tpope/vim-surround'
+
+call vundle#end()
+
 filetype plugin indent on
 
-"pathogen
-execute pathogen#infect()
+" syntax enable
 
 "Not sure what this is
 "set grepformat=%f:%l:%c%m
 
-colorscheme monokai
+colorscheme ir_black
 
 if has('gui_running')
   "set background=light
@@ -25,7 +45,8 @@ set vb
 
 "set guifont= Monako\ 11
 if has("gui_macvim")
-  set guifont=Inconsolata:h13
+  "set guifont=Inconsolata:h13
+  set guifont=PragmataPro:h13
   macmenu &File.New\ Tab key=<nop>
   map <D-t> <Plug>PeepOpen
 endif
