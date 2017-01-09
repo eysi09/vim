@@ -23,8 +23,7 @@ Bundle 'tpope/vim-surround'
 call vundle#end()
 
 filetype plugin indent on
-
-" syntax enable
+syntax enable
 
 "Not sure what this is
 "set grepformat=%f:%l:%c%m
