@@ -19,6 +19,7 @@ Plugin 'sickill/vim-monokai'
 Plugin 'jvirtanen/vim-octave'
 Plugin 'tpope/vim-repeat'
 Plugin 'tpope/vim-surround'
+Plugin 'w0rp/ale'
 
 call vundle#end()
 
@@ -91,6 +92,10 @@ autocmd Syntax * RainbowParenthesesLoadBraces " not working
 nmap <silent> <RIGHT> :cnext<CR>
 nmap <silent> <LEFT> :cprev<CR>
 
+" ALE
+let g:ale_fixers = {}
+let g:ale_fixers['javascript'] = ['prettier']
+let g:ale_fix_on_save = 0
 
 " bind K to grep word under cursor
 nnoremap K :grep! "\b<C-R><C-W>\b"<CR>:cw<CR>
