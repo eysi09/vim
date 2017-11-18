@@ -21,6 +21,8 @@ Plugin 'tpope/vim-repeat'
 Plugin 'tpope/vim-surround'
 Plugin 'w0rp/ale'
 Plugin 'morhetz/gruvbox'
+Plugin 'leafgarland/typescript-vim'
+Plugin 'jparise/vim-graphql'
 
 call vundle#end()
 
