@@ -20,6 +20,7 @@ Plugin 'jvirtanen/vim-octave'
 Plugin 'tpope/vim-repeat'
 Plugin 'tpope/vim-surround'
 Plugin 'w0rp/ale'
+Plugin 'morhetz/gruvbox'
 
 call vundle#end()
 
@@ -29,7 +30,10 @@ syntax enable
 "Not sure what this is
 "set grepformat=%f:%l:%c%m
 
-colorscheme ir_black
+" True color in terminal
+set termguicolors
+
+colorscheme gruvbox
 
 if has('gui_running')
   "set background=light
