@@ -93,9 +93,14 @@ nmap <silent> <RIGHT> :cnext<CR>
 nmap <silent> <LEFT> :cprev<CR>
 
 " ALE
+" let g:ale_linters = {
+" \   'javascript': [],
+" \} "disable for now
+
 let g:ale_fixers = {}
 let g:ale_fixers['javascript'] = ['prettier']
 let g:ale_fix_on_save = 0
+let g:ale_javascript_prettier_options = '--single-quote --jsx-bracket-same-line'
 
 " bind K to grep word under cursor
 nnoremap K :grep! "\b<C-R><C-W>\b"<CR>:cw<CR>
