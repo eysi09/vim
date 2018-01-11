@@ -10,7 +10,6 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'rking/ag.vim'
 Plugin 'kien/ctrlp.vim'
 Plugin 'scrooloose/nerdtree'
-Plugin 'kien/rainbow_parentheses.vim'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'tpope/vim-dispatch'
 Plugin 'pangloss/vim-javascript'
@@ -81,12 +80,6 @@ autocmd FileType ruby,eruby let g:rubycomplete_rails = 1
 autocmd FileType ruby,eruby let g:rubycomplete_classes_in_global = 1
 "improve autocomplete menu color
 highlight Pmenu ctermbg=238 gui=bold
-
-" Rainbow parentheses
-autocmd VimEnter * RainbowParenthesesToggle
-autocmd Syntax * RainbowParenthesesLoadRound "not working
-autocmd Syntax * RainbowParenthesesLoadSquare "not working
-autocmd Syntax * RainbowParenthesesLoadBraces " not working
 
 " The Silver Searcher
 "if executable('ag')
