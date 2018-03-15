@@ -23,6 +23,8 @@ Plugin 'morhetz/gruvbox'
 Plugin 'leafgarland/typescript-vim'
 Plugin 'jparise/vim-graphql'
 Plugin 'neovimhaskell/haskell-vim'
+Plugin 'Quramy/tsuquyomi'
+Plugin 'Valloric/YouCompleteMe'
 
 call vundle#end()
 
@@ -125,6 +127,15 @@ let g:ctrlp_working_path_mode = 'ra'
 
 " JSX
 let g:jsx_ext_required = 0
+
+" You Complete Me
+" Autocomplete on '.'
+if !exists("g:ycm_semantic_triggers")
+ let g:ycm_semantic_triggers = {}
+ endif
+ let g:ycm_semantic_triggers['typescript'] = ['.']
+" Disable for now
+let g:loaded_youcompleteme = 1
 
 "map split navitagtion
 nnoremap <C-J> <C-W><C-J>
