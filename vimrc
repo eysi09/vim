@@ -158,3 +158,8 @@ fun! TrimWhitespace()
 endfun
 
 command! TrimWhitespace call TrimWhitespace()
+
+" Show irregular white space chars
+command! SetWhitespaceListChars set listchars=nbsp:¬,eol:¶,extends:»,precedes:«,trail:•
+
+command! FixIrregularWhiteSpace %s/ / /g
