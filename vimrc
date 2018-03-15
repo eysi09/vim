@@ -82,6 +82,9 @@ autocmd FileType ruby,eruby let g:rubycomplete_classes_in_global = 1
 "improve autocomplete menu color
 highlight Pmenu ctermbg=238 gui=bold
 
+"yaml files
+autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
+
 " The Silver Searcher
 "if executable('ag')
   " Note we extract the column as well as the file and line number
