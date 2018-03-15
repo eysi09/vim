@@ -99,7 +99,7 @@ nmap <silent> <LEFT> :cprev<CR>
 let g:ale_fixers = {}
 let g:ale_fixers['javascript'] = ['prettier']
 let g:ale_fix_on_save = 1
-let g:ale_javascript_prettier_options = '--single-quote --jsx-bracket-same-line'
+let g:ale_javascript_prettier_options = '--single-quote --jsx-bracket-same-line --trailing-comma'
 
 " HASKELL-VIM
 let g:haskell_enable_quantification = 1   " to enable highlighting of `forall`
